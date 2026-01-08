@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentura | Your Identity Shield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #020617; font-family: sans-serif; }
+        .aura-glow { background: radial-gradient(circle, rgba(20, 184, 166, 0.15) 0%, rgba(2, 6, 23, 0) 70%); }
+        @keyframes pulse-aura { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.8; } }
+        .animate-aura { animation: pulse-aura 4s ease-in-out infinite; }
+    </style>
+</head>
+<body class="text-slate-200 overflow-x-hidden">
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto border-b border-slate-800">
+        <div class="text-2xl font-bold tracking-tighter text-teal-400 uppercase">Sentura</div>
+        <a href="#waitlist" class="bg-teal-500 text-slate-900 px-5 py-2 rounded-full font-semibold text-sm">Join Waitlist</a>
+    </nav>
+
+    <section class="relative pt-20 pb-32 px-6 flex flex-col items-center text-center">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] aura-glow animate-aura rounded-full"></div>
+        <div class="relative z-10">
+            <h1 class="text-5xl font-bold tracking-tight mb-8 text-white">Can you trust your ears?</h1>
+            <p class="text-lg text-slate-400 mb-10 max-w-2xl mx-auto">The world's first on-device AI bodyguard that verifies calls and protects your digital likeness.</p>
+        </div>
+    </section>
+
+    <section id="waitlist" class="py-24 px-6 text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6">Join the Digital Integrity Movement.</h2>
+        <form action="https://formspree.io/f/mkogdekg" method="POST" class="flex flex-col gap-3">
+            <input type="email" name="email" placeholder="Enter your email" required class="bg-slate-900 border border-slate-700 rounded-xl px-6 py-4 text-white">
+            <button type="submit" class="bg-teal-500 text-slate-900 px-8 py-4 rounded-xl font-bold">Get Early Access</button>
+        </form>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-xs">
+        © 2026 Sentura Labs. Built for a Post-Truth World.
+    </footer>
+</body>
+</html>
